@@ -14,7 +14,7 @@ const createSkeletonPlayer = (skeletonObj) => {
 
 
 const createPlayerAPI = (name, character) => {
-  return fetch("http://localhost:3000/players", {
+  return fetch("https://fathomless-shore-47510.herokuapp.com/players", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -60,7 +60,7 @@ const highScoreHTML = (player) => {
 };
 
 const getPlayers = () => {
-  return fetch("http://localhost:3000/players")
+  return fetch("https://fathomless-shore-47510.herokuapp.com/players")
     .then(res => res.json())
 };
 
@@ -80,7 +80,7 @@ const topFivePlayers = (array) => {
 };
 
 const updateScoreApi = (playerId, playerScore) => {
-  return fetch(`http://localhost:3000/players/${playerId}`, {
+  return fetch(`https://fathomless-shore-47510.herokuapp.com/players/${playerId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",

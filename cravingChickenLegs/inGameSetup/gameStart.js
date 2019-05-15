@@ -36,7 +36,7 @@ startGameDiv.addEventListener('click', event => {
 });
 
 const updateScore = (playerId, playerScore) => {
-  return fetch(`http://localhost:3000/players/${playerId}`, {
+  return fetch(`https://fathomless-shore-47510.herokuapp.com/players/${playerId}`, {
     method: "PATCH",
     headers: {
       "Content-Type": "application/json",
