@@ -26,7 +26,7 @@ const gameTimer = () => {
 };
 
 
-startGameDiv.innerHTML = `<h2 class="center blink_me">click here to start</h2>`
+startGameDiv.innerHTML = `<h2 class="center blink_me">Submit Names Then Click Here to Start!</h2>`
 
 startGameDiv.addEventListener('click', event => {
   if (isGameStart === false) {
