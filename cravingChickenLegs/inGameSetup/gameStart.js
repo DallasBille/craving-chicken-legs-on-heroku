@@ -1,5 +1,6 @@
 const startGameDiv = document.querySelector("#top-text")
 const gameStart = () => {
+    alert("Can't see the leaderboard on the left? Try decreasing your screen size with Command - ")
     PIXI.loader
         .load(bgSetup)
         .load(skeletonSetup)
